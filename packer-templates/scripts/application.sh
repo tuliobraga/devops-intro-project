@@ -1,7 +1,7 @@
 #!/bin/bash -eux
 
 apt-get -y install nginx
-sed -i -e '0,/root \/usr\/share\/nginx\/html/s//root \/home\/vagrant\/devops-kungfu/' /etc/nginx/sites-available/default
+sed -i -e '0,/root \/var\/www\/html/s//root \/home\/vagrant\/devops-kungfu/' /etc/nginx/sites-available/default
 
 
 # install git, needed for acquiring webapp source code
