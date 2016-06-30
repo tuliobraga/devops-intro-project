@@ -12,10 +12,14 @@ apt-get remove --purge node
 
 # application and build process required packages
 # add Node.js maintained repositories
-curl -sL https://deb.nodesource.com/setup | bash -
+# curl -sL https://deb.nodesource.com/setup | bash -
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
 # for tests and build
 apt-get -y install nodejs
+apt-get -y install build-essential
+apt-get -y install npm
+
 # for phantomjs
 apt-get -y install libfontconfig1 fontconfig libfontconfig1-dev libfreetype6-dev
 
